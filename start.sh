@@ -1,7 +1,5 @@
 #!/bin/bash
-# start-all-with-host.sh
 
-# Запускаем все серверы с командой host
 screen -S mindAI -dm bash -c "cd /root/mindAI && java -jar server-release.jar"
 sleep 1
 screen -S mindAI -X stuff "host\n"
@@ -18,5 +16,4 @@ screen -S mindZeroHit -dm bash -c "cd /root/mindZeroHit && java -jar server-rele
 sleep 1
 screen -S mindZeroHit -X stuff "host\n"
 
-echo "Все серверы запущены с командой 'host'"
 screen -ls
