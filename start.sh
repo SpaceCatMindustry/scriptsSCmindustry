@@ -16,4 +16,8 @@ screen -S mindZeroHit -dm bash -c "cd /root/mindZeroHit && java -jar server-rele
 sleep 1
 screen -S mindZeroHit -X stuff "host\n"
 
+screen -S mindSandBox -dm bash -c "cd /root/mindSandBox && java -jar server-release.jar"
+sleep 1
+screen -S mindSandBox -X stuff "host\n"
+
 screen -ls
